@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.home.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/homeactivity_safetytext_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:text="Fire Alarm Status:"
+            android:textAllCaps="true"
+            android:textColor="@color/blackColor"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/homeactivity_safetytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are ok"
+            android:textAllCaps="true"
+            android:textColor="@color/greenColor"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/homeactivity_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/homeactivity_safetytext_container"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/homeactivity_hometab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/homeactivity_hometabimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/house_selected"/>
+            <View
+                android:id="@+id/homeactivity_homeselectedview"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blackColor" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/homeactivity_maptab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/homeactivity_maptabimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/map_unselected"
+                android:layout_centerInParent="true"/>
+            <View
+                android:id="@+id/homeactivity_mapselectedview"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blackColor" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/homeactivity_infotab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/homeactivity_infotabimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info_unselected"
+                android:layout_centerInParent="true"/>
+            <View
+                android:id="@+id/homeactivity_infoselectedview"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blackColor" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/homeactivity_profiletab"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/homeactivity_profiletabimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile_unselected"
+                android:layout_centerInParent="true"/>
+            <View
+                android:id="@+id/homeactivity_profileselectedview"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:visibility="gone"
+                android:layout_alignParentBottom="true"
+                android:background="@color/blackColor" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/homeactivity_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeactivity_tabbar"/>
+
+    <RelativeLayout
+        android:id="@+id/homeactivity_report_fire_button"
+        android:layout_width="240dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_report_fire"/>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SafeFromFire</string>
+    <string name="register">Register</string>
+    <string name="skip">Skip</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="age">Age</string>
+    <string name="disabilities">Disabilities</string>
+    <string name="address">Address</string>
+    <string name="secondary_address">Secondary Address</string>
+    <string name="confirm">Confirm</string>
+    <string name="weather_api_key">a4c6a341be13ea337949e5e6ad2d02f0</string>
+    <string name="weather_api_response_type">json</string>
+    <string name="weather_response_unit">metric</string>
+    <string name="save">Save</string>
+</resources>

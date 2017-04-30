@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/reportactivity_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/blackColor">
+        <ImageView
+            android:id="@+id/reportactivity_backbutton"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_leftarrow_white"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/reportactivity_topbar"
+        android:text="Send Picture (Optional)"
+        android:textColor="@color/blackColor"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/reportactivity_takepicture"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/reportactivity_topbar"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Take Picture"/>
+
+    <Button
+        android:id="@+id/reportactivity_nextbutton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Send Report"/>
+
+    <ImageView
+        android:id="@+id/reportactivity_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_margin="20dp"
+        android:layout_below="@id/reportactivity_takepicture" />
+
+</RelativeLayout>

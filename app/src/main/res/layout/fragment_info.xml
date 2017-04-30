@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <WebView
+                android:id="@+id/info_webview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="During a Fire:"
+                android:textColor="@color/blackColor"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="\u2022Stay calm.\n\n\u2022Go to an area clear of vegetation, a ditch or depression on level ground if possible.\n\n\u2022Lie face down, cover up your body.\n\n\u2022Crawl low under any smoke to your exit - heavy smoke and poisonous gases collect first along the ceiling.\n\n\u2022When the smoke alarm sounds, get moving.\n\n\u2022If there is smoke blocking your door or first way out, use your second way out. Smoke is toxic...\n\n\u2022Before opening a door, feel the doorknob and door."/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="90dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
